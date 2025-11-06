@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación de Boda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Encabezado -->
+        <header>
+            <h1>Carlos Alberto Suarez & Tatiana Villafani Montaño</h1>
+            <p class="date">5 de diciembre 2025 | 8:45 am</p>
+        </header>
+
+        <!-- Galería de fotos -->
+        <section class="gallery">
+            <img src="img/Image1.jpeg" alt="Novio y Novia" class="active">
+            <img src="img/Image2.jpeg" alt="Novios" >
+            <img src="img/Image3.jpeg" alt="Novios" >
+            <img src="img/Image4.jpeg" alt="Novios">
+            <div class="controls">
+                <button id="prev">❮</button>
+                <button id="next">❯</button>
+            </div>
+        </section>
+
+        <!-- Mensaje -->
+        <section class="message">
+            <h2>¡Nos casamos!</h2>
+            <p>Nos encantaría contar con tu presencia para celebrar este día tan especial.</p>
+        </section>
+
+        <!-- Formulario RSVP -->
+        <section class="rsvp">
+            <h2>Confirma tu asistencia</h2>
+            <form id="rsvpForm">
+                <input type="text" placeholder="Nombre completo" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
