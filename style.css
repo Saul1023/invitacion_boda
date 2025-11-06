@@ -1,46 +1,251 @@
-/* Fuentes y colores elegantes para bodas */
-body {
-    font-family: 'Georgia', serif;
+/* Estilos mejorados con fondo elegante */
+* {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #fff0f5, #ffe4e1);
-    color: #333;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+    background: 
+        radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+        linear-gradient(135deg, #f9f5f0 0%, #f0e6e1 100%);
+    color: #5a4d41;
     text-align: center;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23d4c1b3' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+    opacity: 0.5;
+    z-index: -1;
 }
 
 .container {
     max-width: 900px;
     margin: auto;
-    padding: 20px;
+    padding: 30px 20px;
+}
+
+/* Encabezado */
+header {
+    margin-bottom: 40px;
+    padding: 40px 0;
+    position: relative;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #d4c1b3, transparent);
+}
+
+.header-image {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.couple-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 10px 30px rgba(139, 107, 93, 0.2);
+    transition: all 0.3s ease;
+}
+
+.couple-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(139, 107, 93, 0.3);
 }
 
 header h1 {
-    font-size: 2.5em;
-    color: #d63384;
-    margin-bottom: 5px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 4em;
+    color: #8b6b5d;
+    margin-bottom: 10px;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+header .subtitle {
+    font-size: 1.4em;
+    color: #a78a7a;
+    margin-bottom: 15px;
+    font-style: italic;
 }
 
 header .date {
-    font-size: 1.2em;
-    color: #555;
+    font-size: 1.6em;
+    color: #8b6b5d;
+    letter-spacing: 3px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+/* Contador regresivo */
+.countdown-container {
+    margin-top: 40px;
+}
+
+.countdown-container h3 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2em;
+    color: #8b6b5d;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.countdown-item {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 100px;
+    box-shadow: 0 5px 15px rgba(139, 107, 93, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.countdown-number {
+    display: block;
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #8b6b5d;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.countdown-label {
+    font-size: 1em;
+    color: #a78a7a;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Sección Nuestra Boda */
+.our-wedding {
+    margin: 60px 0;
+    padding: 50px 40px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(139, 107, 93, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.wedding-story {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.story-text p {
+    font-size: 1.3em;
+    line-height: 1.7;
+    color: #5a4d41;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.story-image {
+    position: relative;
+    height: 200px;
+}
+
+.decoration-frame {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #f0e6e1, #e8d5cc);
+    border-radius: 10px;
+    position: relative;
+    border: 2px solid #d4c1b3;
+}
+
+.decoration-frame::before {
+    content: "💕";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    opacity: 0.3;
+}
+
+/* Encabezados de sección */
+.section-header {
+    margin-bottom: 40px;
+}
+
+.section-header h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3em;
+    color: #8b6b5d;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.divider {
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #d4c1b3, transparent);
+    margin: 0 auto;
+}
+
+/* Galería */
+.gallery-section {
+    margin: 60px 0;
 }
 
 .gallery {
     position: relative;
-    margin: 30px 0;
-    height: 400px;
+    margin: 40px 0;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(139, 107, 93, 0.15);
 }
 
 .gallery img {
     width: 100%;
-    height: 400px;
+    height: 100%;
     object-fit: cover;
-    border-radius: 15px;
     display: none;
+    transition: opacity 0.8s ease;
 }
 
 .gallery img.active {
     display: block;
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0.7; }
+    to { opacity: 1; }
 }
 
 .controls {
@@ -54,66 +259,323 @@ header .date {
 }
 
 .controls button {
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.7);
     border: none;
-    padding: 10px 20px;
+    width: 50px;
+    height: 50px;
     font-size: 1.5em;
     border-radius: 50%;
     cursor: pointer;
-    transition: 0.3s;
+    transition: all 0.3s ease;
+    color: #8b6b5d;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .controls button:hover {
     background: rgba(255, 255, 255, 0.9);
+    transform: scale(1.1);
 }
 
+/* Mensaje */
 .message {
-    margin: 30px 0;
-}
-
-.message h2 {
-    font-size: 2em;
-    color: #d63384;
+    margin: 50px 0;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(139, 107, 93, 0.1);
+    backdrop-filter: blur(5px);
 }
 
 .message p {
-    font-size: 1.2em;
+    font-size: 1.3em;
+    line-height: 1.7;
+    color: #5a4d41;
+    max-width: 700px;
+    margin: 0 auto 20px;
 }
 
-.rsvp form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+.message .quote {
+    font-style: italic;
+    color: #a78a7a;
+    font-size: 1.4em;
+    margin-bottom: 30px;
+    border-left: 3px solid #d4c1b3;
+    padding-left: 20px;
 }
 
-.rsvp input {
-    padding: 10px;
-    width: 80%;
-    max-width: 400px;
-    border-radius: 10px;
-    border: 1px solid #d63384;
-    font-size: 1em;
+/* Ubicaciones */
+.location {
+    margin: 40px 0;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(139, 107, 93, 0.1);
+    backdrop-filter: blur(5px);
 }
 
-.rsvp button {
-    padding: 10px 20px;
-    background-color: #d63384;
+.location.reception {
+    background: rgba(255, 248, 240, 0.7);
+}
+
+.location-icon {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.location h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5em;
+    color: #8b6b5d;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.location-name {
+    font-size: 1.4em;
+    color: #5a4d41;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.location-address {
+    font-size: 1.3em;
+    color: #a78a7a;
+    margin-bottom: 10px;
+}
+
+.location-time {
+    font-size: 1.4em;
+    color: #8b6b5d;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.location-link {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(to right, #8b6b5d, #a78a7a);
     color: white;
-    border: none;
-    border-radius: 10px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: 0.3s;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
 }
 
-.rsvp button:hover {
-    background-color: #b52a70;
+.location-link:hover {
+    background: linear-gradient(to right, #7a5d4f, #8b6b5d);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(139, 107, 93, 0.3);
+}
+
+/* Frase romántica */
+.romantic-quote {
+    margin: 50px 0;
+    padding: 40px;
+    background: linear-gradient(135deg, rgba(139, 107, 93, 0.1), rgba(167, 138, 122, 0.1));
+    border-radius: 15px;
+    border-left: 5px solid #8b6b5d;
+}
+
+.romantic-quote p {
+    font-size: 1.5em;
+    font-style: italic;
+    color: #8b6b5d;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Detalles */
+.details {
+    margin: 50px 0;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(139, 107, 93, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+/* Estilos para la invitación especial */
+.special-invitation {
+    margin: 50px 0 80px;
+    padding: 36px 28px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.85), rgba(255,250,247,0.85));
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(139, 107, 93, 0.08);
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.special-invitation .invitation-content {
+    display: grid;
+    gap: 18px;
+    align-items: center;
+}
+
+.special-invitation .invitation-icon {
+    font-size: 2.4em;
+}
+
+.special-invitation .invitation-text {
+    font-size: 1.15em;
+    line-height: 1.6;
+    color: #5a4d41;
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.special-invitation .invitation-subtext {
+    color: #88706a;
+}
+
+.invitation-cta {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    align-items: center;
+}
+
+.rsvp-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #8b6b5d, #a78a7a);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.rsvp-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(139,107,93,0.18);
+}
+
+.rsvp-note {
+    font-size: 0.95em;
+    color: #a78a7a;
+}
+
+.signature-names {
+    font-weight: 600;
+    color: #8b6b5d;
+    font-size: 1.05em;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.detail-item {
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(139, 107, 93, 0.1);
+}
+
+.detail-icon {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.detail-item h3 {
+    font-size: 1.4em;
+    color: #8b6b5d;
+    margin-bottom: 10px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+}
+
+.detail-item p {
+    font-size: 1.1em;
+    color: #5a4d41;
+    line-height: 1.5;
+}
+
+/* Mensaje final */
+.closing-message {
+    margin: 50px 0 30px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(139, 107, 93, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.closing-message h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.8em;
+    color: #8b6b5d;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.closing-message p {
+    font-size: 1.3em;
+    color: #5a4d41;
+    margin-bottom: 15px;
+}
+
+.closing-quote {
+    font-style: italic;
+    color: #a78a7a;
+    font-size: 1.4em;
+    margin-top: 20px;
+}
+
+/* Elementos decorativos */
+.floral-decoration {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.floral-1 {
+    top: 5%;
+    left: 5%;
+    transform: rotate(15deg);
+}
+
+.floral-2 {
+    bottom: 10%;
+    right: 5%;
+    transform: rotate(-10deg);
 }
 
 /* Responsive */
-@media (max-width: 600px) {
-    header h1 { font-size: 1.8em; }
+@media (max-width: 768px) {
+    header h1 { font-size: 3em; }
+    .couple-image { width: 150px; height: 150px; }
+    .gallery { height: 350px; }
+    .message h2, .location h2, .details h2, .closing-message h2 { font-size: 2.2em; }
+    .message p, .romantic-quote p { font-size: 1.2em; }
+    .floral-decoration { width: 80px; height: 80px; }
+    .details-grid { grid-template-columns: 1fr; }
+    .wedding-story { grid-template-columns: 1fr; }
+    .story-text p { text-align: center; }
+    .countdown-item { min-width: 80px; padding: 15px; }
+    .countdown-number { font-size: 2em; }
+}
+
+@media (max-width: 480px) {
+    header h1 { font-size: 2.5em; }
+    .couple-image { width: 120px; height: 120px; border-width: 3px; }
     .gallery { height: 250px; }
-    .gallery img { height: 250px; }
+    .controls button { width: 40px; height: 40px; }
+    .message, .location, .details, .closing-message { padding: 25px; }
+    header .date { font-size: 1.3em; }
+    .countdown { gap: 10px; }
+    .countdown-item { min-width: 70px; padding: 10px; }
+    .countdown-number { font-size: 1.8em; }
 }

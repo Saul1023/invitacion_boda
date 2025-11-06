@@ -3,46 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invitación de Boda</title>
+    <title>Carlos & Tatiana - Nuestra Boda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!-- Tailwind CDN para prototipado rápido (usar build para producción) -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+    <!-- Elementos decorativos -->
+    <div class="floral-decoration floral-1">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50,15 C60,5 80,5 85,15 C95,25 95,40 85,50 C75,60 60,60 50,50 C40,60 25,60 15,50 C5,40 5,25 15,15 C20,5 40,5 50,15 Z" fill="#8b6b5d"/>
+        </svg>
+    </div>
+    <div class="floral-decoration floral-2">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50,15 C60,5 80,5 85,15 C95,25 95,40 85,50 C75,60 60,60 50,50 C40,60 25,60 15,50 C5,40 5,25 15,15 C20,5 40,5 50,15 Z" fill="#8b6b5d"/>
+        </svg>
+    </div>
+
     <div class="container">
         <!-- Encabezado -->
         <header>
-            <h1>Carlos Alberto Suarez & Tatiana Villafani Montaño</h1>
-            <p class="date">5 de diciembre 2025 | 8:45 am</p>
+            <div class="header-image">
+                <img src="img/cyt.png" alt="Carlos y Tatiana" class="couple-image">
+            </div>
+            <h1>Carlos & Tatiana</h1>
+            <p class="subtitle">Uniendo nuestras vidas para siempre</p>
+            <p class="date">5 de Diciembre, 2025</p>
+            
+            <!-- Contador regresivo -->
+            <div class="countdown-container">
+                <h3>Faltan</h3>
+                <div class="countdown" id="countdown">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="days">00</span>
+                        <span class="countdown-label">Días</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="hours">00</span>
+                        <span class="countdown-label">Horas</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="minutes">00</span>
+                        <span class="countdown-label">Minutos</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="seconds">00</span>
+                        <span class="countdown-label">Segundos</span>
+                    </div>
+                </div>
+            </div>
         </header>
 
-        <!-- Galería de fotos -->
-        <section class="gallery">
-            <img src="img/Image1.jpeg" alt="Novio y Novia" class="active">
-            <img src="img/Image2.jpeg" alt="Novios" >
-            <img src="img/Image3.jpeg" alt="Novios" >
-            <img src="img/Image4.jpeg" alt="Novios">
-            <div class="controls">
-                <button id="prev">❮</button>
-                <button id="next">❯</button>
+        <!-- Sección Nuestra Boda -->
+        <section class="our-wedding">
+            <div class="section-header">
+                <h2>Nuestra Boda</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="wedding-story">
+                <div class="story-text">
+                    <p>Después de un hermoso camino juntos, hemos decidido unir nuestras vidas en matrimonio. Este día representa el comienzo de una nueva etapa llena de amor, complicidad y sueños por cumplir.</p>
+                    <p>Queremos que formes parte de este momento tan especial en nuestras vidas, compartiendo con nosotros la alegría de celebrar el amor verdadero.</p>
+                </div>
+                <div class="story-image">
+                    <div class="decoration-frame"></div>
+                </div>
             </div>
         </section>
 
-        <!-- Mensaje -->
-        <section class="message">
-            <h2>¡Nos casamos!</h2>
-            <p>Nos encantaría contar con tu presencia para celebrar este día tan especial.</p>
+        <!-- Galería de fotos -->
+        <section class="gallery-section">
+            <div class="section-header">
+                <h2>Nuestros Momentos</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="gallery">
+                <img src="img/Image1.jpeg" alt="Novio y Novia" class="active">
+                <img src="img/Image2.jpeg" alt="Novios" >
+                <img src="img/Image3.jpeg" alt="Novios" >
+                <img src="img/Image4.jpeg" alt="Novios">
+                <div class="controls">
+                    <button id="prev">❮</button>
+                    <button id="next">❯</button>
+                </div>
+            </div>
         </section>
 
-        <!-- Formulario RSVP -->
-        <section class="rsvp">
-            <h2>Confirma tu asistencia</h2>
-            <form id="rsvpForm">
-                <input type="text" placeholder="Nombre completo" required>
-                <input type="email" placeholder="Correo electrónico" required>
-                <button type="submit">Enviar</button>
-            </form>
+        <!-- Mensaje principal -->
+        <section class="message">
+            <div class="section-header">
+                <h2>¡Nos Casamos!</h2>
+                <div class="divider"></div>
+            </div>
+            <p class="quote">"El amor no se mide por el tiempo que pasas juntos, sino por cómo ese tiempo transforma tu vida"</p>
+            <p>Con gran alegría en nuestros corazones, queremos compartir con ustedes el comienzo de nuestra vida juntos como esposos.</p>
+            <p>Su presencia iluminará nuestro día especial y hará de este momento un recuerdo eterno.</p>
+        </section>
+
+        <!-- Ceremonia Civil -->
+        <section class="location">
+            <div class="location-icon">💒</div>
+            <h2>Ceremonia Civil</h2>
+            <p class="location-name">Registro Civil</p>
+            <p class="location-address">Facundo 2256</p>
+            <p class="location-time">8:45 AM</p>
+            <a href="https://maps.google.com/?q=Facundo+2256" target="_blank" class="location-link">Ver en Google Maps</a>
+        </section>
+
+        <!-- Recepción -->
+        <section class="location reception">
+            <div class="location-icon">🏡</div>
+            <h2>Recepción</h2>
+            <p class="location-name">Nuestro Hogar</p>
+            <p class="location-address">Casa Familiar</p>
+            <p class="location-time">12:00 PM</p>
+            <a href="https://share.google.com/sjoLr7RzK22jziWLs" target="_blank" class="location-link">Ver ubicación</a>
+        </section>
+
+        <!-- Frase romántica -->
+        <section class="romantic-quote">
+            <p>"Encontré en tus ojos el reflejo de todo lo que siempre soñé, y en tu corazón, el hogar donde quiero pasar el resto de mis días"</p>
+        </section>
+
+        <!-- Detalles importantes -->
+        <section class="details">
+            <div class="section-header">
+                <h2>Detalles Importantes</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="details-grid">
+                <div class="detail-item">
+                    <div class="detail-icon">👔</div>
+                    <h3>Vestimenta</h3>
+                    <p>Elegante - Formal</p>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-icon">🎁</div>
+                    <h3>Regalos</h3>
+                    <p>Su presencia es nuestro mejor regalo</p>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-icon">💌</div>
+                    <h3>Confirmación</h3>
+                    <p>Esperamos contar con tu presencia</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mensaje final -->
+        <section class="closing-message">
+            <h2>Con el amor como testigo</h2>
+            <p>Carlos Alberto Suarez & Tatiana Villafani Montaño</p>
+            <p class="closing-quote">"Porque contigo, el paraíso está aquí en la tierra"</p>
+        </section>
+
+        <!-- Invitación Especial (Tailwind, compacta) -->
+        <section class="special-invitation" role="region" aria-labelledby="invitation-title">
+            <div class="invitation-content max-w-xl mx-auto bg-white/80 backdrop-blur-sm rounded-xl shadow-sm p-6 text-center">
+                <div class="invitation-icon text-3xl mb-2" aria-hidden="true">💫</div>
+                <h2 id="invitation-title" class="text-2xl font-serif text-rose-700 mb-1">Una Invitación Especial</h2>
+                <div class="divider mx-auto w-20 h-0.5 bg-gradient-to-r from-transparent via-rose-200 to-transparent my-4" aria-hidden="true"></div>
+
+                <p class="invitation-text text-gray-700 text-sm sm:text-base leading-relaxed mb-3 px-2">
+                    Nos encantaría que nos acompañes en este día tan significativo. Tu presencia aportará calidez, alegría y recuerdos que guardaremos por siempre.
+                </p>
+
+                <p class="invitation-subtext text-amber-700 text-sm font-medium mb-4 px-4">
+                    Acompáñanos a celebrar el amor, la familia y la amistad — será un honor compartir este momento contigo.
+                </p>
+                <div class="invitation-signature mt-5 text-gray-800" aria-label="Firmado">
+                    <p class="text-sm">Con cariño,</p>
+                    <p class="signature-names font-semibold text-base">Carlos &amp; Tatiana</p>
+                </div>
+            </div>
         </section>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
