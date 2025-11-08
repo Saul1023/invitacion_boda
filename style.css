@@ -698,3 +698,428 @@ header .date {
         padding: 12px;
     }
 }
+/* ========== MEJORAS RESPONSIVAS PARA CELULAR ========== */
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px 12px;
+    }
+
+    /* Encabezado móvil */
+    header {
+        margin-bottom: 25px;
+        padding: 25px 0;
+    }
+
+    .header-image {
+        margin-bottom: 20px;
+    }
+
+    .couple-image {
+        width: 100px;
+        height: 100px;
+        border-width: 3px;
+    }
+
+    header h1 {
+        font-size: 2em;
+        letter-spacing: 1px;
+        margin-bottom: 8px;
+    }
+
+    header .subtitle {
+        font-size: 0.95em;
+        margin-bottom: 10px;
+    }
+
+    header .date {
+        font-size: 1.1em;
+        letter-spacing: 2px;
+        margin-bottom: 25px;
+    }
+
+    /* Contador regresivo móvil */
+    .countdown-container {
+        margin-top: 25px;
+    }
+
+    .countdown-container h3 {
+        font-size: 1.4em;
+        margin-bottom: 15px;
+    }
+
+    .countdown {
+        gap: 8px;
+    }
+
+    .countdown-item {
+        min-width: 60px;
+        padding: 12px 8px;
+    }
+
+    .countdown-number {
+        font-size: 1.5em;
+    }
+
+    .countdown-label {
+        font-size: 0.75em;
+    }
+
+    /* Sección Nuestra Boda móvil */
+    .our-wedding {
+        margin: 30px 0;
+        padding: 20px 15px;
+        border-radius: 10px;
+    }
+
+    .wedding-story {
+        gap: 20px;
+    }
+
+    .story-text p {
+        font-size: 0.95em;
+        line-height: 1.5;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .story-image {
+        height: 120px;
+    }
+
+    .decoration-frame::before {
+        font-size: 2em;
+    }
+
+    /* Encabezados de sección móvil */
+    .section-header {
+        margin-bottom: 25px;
+    }
+
+    .section-header h2 {
+        font-size: 1.8em;
+        margin-bottom: 10px;
+    }
+
+    .divider {
+        width: 60px;
+    }
+
+    /* Galería móvil */
+    .gallery-section {
+        margin: 30px 0;
+    }
+
+    .gallery-content-wrapper {
+        gap: 20px;
+    }
+
+    .gallery-sidebar {
+        padding: 15px;
+        border-radius: 8px;
+        order: 2;
+    }
+
+    .sidebar-image {
+        height: 140px;
+        margin-bottom: 15px;
+    }
+
+    .sidebar-quote {
+        font-size: 0.9em;
+        padding: 10px;
+        line-height: 1.4;
+    }
+
+    .gallery {
+        height: 220px;
+        border-radius: 8px;
+        order: 1;
+    }
+
+    .gallery img {
+        max-width: 85%;
+        max-height: 85%;
+    }
+
+    .controls {
+        padding: 0 10px;
+    }
+
+    .controls button {
+        width: 35px;
+        height: 35px;
+        font-size: 1em;
+    }
+
+    /* Mensaje móvil */
+    .message {
+        margin: 30px 0;
+        padding: 20px 15px;
+        border-radius: 10px;
+    }
+
+    .message p {
+        font-size: 0.95em;
+        line-height: 1.5;
+        margin-bottom: 12px;
+    }
+
+    .message .quote {
+        font-size: 1em;
+        margin-bottom: 20px;
+        padding-left: 12px;
+        border-left-width: 2px;
+    }
+
+    /* Ubicaciones móvil */
+    .location {
+        margin: 25px 0;
+        padding: 20px 15px;
+        border-radius: 10px;
+    }
+
+    .location-icon {
+        font-size: 2em;
+        margin-bottom: 15px;
+    }
+
+    .location h2 {
+        font-size: 1.6em;
+        margin-bottom: 10px;
+    }
+
+    .location-name {
+        font-size: 1.1em;
+        margin-bottom: 6px;
+    }
+
+    .location-address {
+        font-size: 1em;
+        margin-bottom: 6px;
+    }
+
+    .location-time {
+        font-size: 1.1em;
+        margin-bottom: 15px;
+    }
+
+    .location-link {
+        padding: 10px 18px;
+        font-size: 0.95em;
+    }
+
+    /* Frase romántica móvil */
+    .romantic-quote {
+        margin: 30px 0;
+        padding: 20px 15px;
+        border-radius: 10px;
+        border-left-width: 3px;
+    }
+
+    .romantic-quote p {
+        font-size: 1.1em;
+        line-height: 1.4;
+    }
+
+    /* Detalles móvil */
+    .details {
+        margin: 30px 0;
+        padding: 20px 15px;
+        border-radius: 10px;
+    }
+
+    .details-grid {
+        gap: 15px;
+    }
+
+    .detail-item {
+        padding: 18px 15px;
+        border-radius: 8px;
+    }
+
+    .detail-icon {
+        font-size: 1.8em;
+        margin-bottom: 10px;
+    }
+
+    .detail-item h3 {
+        font-size: 1.1em;
+        margin-bottom: 8px;
+    }
+
+    .detail-item p {
+        font-size: 0.9em;
+        line-height: 1.4;
+    }
+
+    /* Invitación especial móvil */
+    .special-invitation {
+        margin: 30px 0 40px;
+        padding: 20px 15px;
+        border-radius: 10px;
+    }
+
+    .invitation-icon {
+        font-size: 2em;
+        margin-bottom: 12px;
+    }
+
+    .special-invitation h2 {
+        font-size: 1.6em;
+        margin-bottom: 12px;
+    }
+
+    .invitation-text {
+        font-size: 0.9em;
+        line-height: 1.4;
+        margin: 15px 0;
+    }
+
+    .invitation-subtext {
+        font-size: 0.85em;
+        margin: 12px 0 15px;
+    }
+
+    .invitation-signature {
+        margin-top: 20px;
+        padding-top: 15px;
+    }
+
+    .invitation-signature p {
+        font-size: 0.9em;
+    }
+
+    .signature-names {
+        font-size: 1.3em;
+    }
+
+    /* Mensaje final móvil */
+    .closing-message {
+        margin: 30px 0 20px;
+        padding: 20px 15px;
+        border-radius: 10px;
+    }
+
+    .closing-message h2 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
+
+    .closing-message p {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+
+    .closing-quote {
+        font-size: 1.1em;
+        margin-top: 15px;
+    }
+
+    /* Elementos decorativos móvil */
+    .floral-decoration {
+        width: 60px;
+        height: 60px;
+    }
+
+    .floral-1 {
+        top: 2%;
+        left: 2%;
+    }
+
+    .floral-2 {
+        bottom: 2%;
+        right: 2%;
+    }
+}
+
+/* Mejoras adicionales para pantallas muy pequeñas */
+@media (max-width: 360px) {
+    .container {
+        padding: 12px 10px;
+    }
+
+    .countdown {
+        gap: 6px;
+    }
+
+    .countdown-item {
+        min-width: 55px;
+        padding: 10px 6px;
+    }
+
+    .countdown-number {
+        font-size: 1.3em;
+    }
+
+    .countdown-label {
+        font-size: 0.7em;
+    }
+
+    .gallery {
+        height: 200px;
+    }
+
+    .controls button {
+        width: 32px;
+        height: 32px;
+        font-size: 0.9em;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .section-header h2 {
+        font-size: 1.6em;
+    }
+}
+
+/* Asegurar que las imágenes no se desborden */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Mejorar la legibilidad del texto en móvil */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    p, li, .location-name, .location-address, .location-time {
+        line-height: 1.4;
+    }
+}
+
+/* Optimizar botones para touch */
+@media (max-width: 480px) {
+    .location-link, .controls button {
+        min-height: 44px; /* Tamaño mínimo para touch */
+        min-width: 44px;
+    }
+
+    .controls button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Asegurar que los textos largos no se salgan */
+.invitation-text, .sidebar-quote, .message p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Mejorar el espaciado en móvil */
+@media (max-width: 480px) {
+    section {
+        margin: 20px 0;
+    }
+    
+    .section-header {
+        margin-bottom: 20px;
+    }
+}
