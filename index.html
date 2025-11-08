@@ -13,12 +13,12 @@
     <!-- Elementos decorativos -->
     <div class="floral-decoration floral-1">
         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-            <path d="M50,15 C60,5 80,5 85,15 C95,25 95,40 85,50 C75,60 60,60 50,50 C40,60 25,60 15,50 C5,40 5,25 15,15 C20,5 40,5 50,15 Z" fill="#8b6b5d"/>
+            <path d="M50,15 C60,5 80,5 85,15 C95,25 95,40 85,50 C75,60 60,60 50,50 C40,60 25,60 15,50 C5,40 5,25 15,15 C20,5 40,5 50,15 Z" fill="#a89283"/>
         </svg>
     </div>
     <div class="floral-decoration floral-2">
         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-            <path d="M50,15 C60,5 80,5 85,15 C95,25 95,40 85,50 C75,60 60,60 50,50 C40,60 25,60 15,50 C5,40 5,25 15,15 C20,5 40,5 50,15 Z" fill="#8b6b5d"/>
+            <path d="M50,15 C60,5 80,5 85,15 C95,25 95,40 85,50 C75,60 60,60 50,50 C40,60 25,60 15,50 C5,40 5,25 15,15 C20,5 40,5 50,15 Z" fill="#a89283"/>
         </svg>
     </div>
 
@@ -30,7 +30,11 @@
             </div>
             <h1>Carlos & Tatiana</h1>
             <p class="subtitle">Uniendo nuestras vidas para siempre</p>
-            <p class="date">5 de Diciembre, 2025</p>
+            <div class="date-decoration">
+                <span class="decoration-line"></span>
+                <p class="date">5 de Diciembre, 2025</p>
+                <span class="decoration-line"></span>
+            </div>
             
             <!-- Contador regresivo -->
             <div class="countdown-container">
@@ -55,20 +59,40 @@
                 </div>
             </div>
         </header>
-
+        <!-- Control de música -->
+        <div class="music-control">
+            <button id="music-toggle">🎵 Reproducir música</button>
+            <audio id="weddingMusic" loop>
+                <source src="img/WhatsApp Video 2025-11-07 at 21.44.48.mp3" type="audio/mpeg">
+                Tu navegador no soporta el audio.
+            </audio>
+        </div>
         <!-- Sección Nuestra Boda -->
         <section class="our-wedding">
             <div class="section-header">
-                <h2>Nuestra Boda</h2>
+                <h2>Nuestra Historia</h2>
                 <div class="divider"></div>
             </div>
+            
             <div class="wedding-story">
-                <div class="story-text">
-                    <p>Después de un hermoso camino juntos, hemos decidido unir nuestras vidas en matrimonio. Este día representa el comienzo de una nueva etapa llena de amor, complicidad y sueños por cumplir.</p>
-                    <p>Queremos que formes parte de este momento tan especial en nuestras vidas, compartiendo con nosotros la alegría de celebrar el amor verdadero.</p>
-                </div>
+                <!-- Imagen a la izquierda -->
                 <div class="story-image">
-                    <div class="decoration-frame"></div>
+                    <div class="image-frame">
+                        <img src="img/Image5.png" alt="Carlos y Tatiana" class="story-photo">
+                        <div class="frame-decoration"></div>
+                    </div>
+                </div>
+                
+                <!-- Texto a la derecha -->
+                <div class="story-text">
+                    <div class="quote-icon">❦</div>
+                    <p class="story-quote">
+                        "Un día descubrimos que el amor no siempre llega haciendo ruido, 
+                        a veces llega tranquilo, con respeto y con ganas de quedarse"
+                    </p>
+                    <div class="story-signature">
+                        <p>Carlos & Tatiana</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -90,7 +114,6 @@
                 <!-- Galería principal -->
                 <div class="gallery">
                     <img src="img/Image1.jpeg" alt="Novio y Novia" class="active">
-                    <img src="img/Image2.jpeg" alt="Novios">
                     <img src="img/Image3.jpeg" alt="Novios">
                     <img src="img/Image4.jpeg" alt="Novios">
                     <img src="img/Image5.png" alt="Novios">
@@ -149,7 +172,8 @@
                 <div class="detail-item">
                     <div class="detail-icon">👔</div>
                     <h3>Vestimenta</h3>
-                    <p>Elegante - Formal</p>
+                    <p>Elegante - Informal</p>
+                    <p class="detail-description">Queremos que te sientas cómodo y elegante. El blanco está reservado para la novia.</p>
                 </div>
                 <div class="detail-item">
                     <div class="detail-icon">🎁</div>
@@ -162,13 +186,6 @@
                     <p>Esperamos contar con tu presencia</p>
                 </div>
             </div>
-        </section>
-
-        <!-- Mensaje final -->
-        <section class="closing-message">
-            <h2>Con el amor como testigo</h2>
-            <p>Carlos Alberto Suarez & Tatiana Villafani Montaño</p>
-            <p class="closing-quote">"Porque contigo, el paraíso está aquí en la tierra"</p>
         </section>
 
         <!-- Invitación Especial -->

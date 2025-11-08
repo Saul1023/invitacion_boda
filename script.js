@@ -123,3 +123,19 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 500 + (index * 100));
     });
 });
+const music = document.getElementById("weddingMusic");
+const musicToggle = document.getElementById("music-toggle");
+
+let isPlaying = false;
+
+musicToggle.addEventListener("click", () => {
+    if (!isPlaying) {
+        music.play();
+        musicToggle.textContent = "⏸️ Pausar música";
+        isPlaying = true;
+    } else {
+        music.pause();
+        musicToggle.textContent = "🎵 Reproducir música";
+        isPlaying = false;
+    }
+});
