@@ -8,8 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <!-- Tailwind CDN para prototipado rápido (usar build para producción) -->
-    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <!-- Elementos decorativos -->
@@ -81,14 +79,26 @@
                 <h2>Nuestros Momentos</h2>
                 <div class="divider"></div>
             </div>
-            <div class="gallery">
-                <img src="img/Image1.jpeg" alt="Novio y Novia" class="active">
-                <img src="img/Image2.jpeg" alt="Novios" >
-                <img src="img/Image3.jpeg" alt="Novios" >
-                <img src="img/Image4.jpeg" alt="Novios">
-                <div class="controls">
-                    <button id="prev">❮</button>
-                    <button id="next">❯</button>
+
+            <div class="gallery-content-wrapper">
+                <!-- Sidebar izquierdo con Image6 -->
+                <div class="gallery-sidebar">
+                    <img src="img/Image6.png" alt="Detalle de Boda" class="sidebar-image">
+                    <p class="sidebar-quote">"Cada momento contigo es un tesoro en nuestra historia de amor."</p>
+                </div>
+                
+                <!-- Galería principal -->
+                <div class="gallery">
+                    <img src="img/Image1.jpeg" alt="Novio y Novia" class="active">
+                    <img src="img/Image2.jpeg" alt="Novios">
+                    <img src="img/Image3.jpeg" alt="Novios">
+                    <img src="img/Image4.jpeg" alt="Novios">
+                    <img src="img/Image5.png" alt="Novios">
+
+                    <div class="controls">
+                        <button id="prev">❮</button>
+                        <button id="next">❯</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -121,7 +131,7 @@
             <p class="location-name">Nuestro Hogar</p>
             <p class="location-address">Casa Familiar</p>
             <p class="location-time">12:00 PM</p>
-            <a href="https://share.google.com/sjoLr7RzK22jziWLs" target="_blank" class="location-link">Ver ubicación</a>
+            <a href="https://maps.app.goo.gl/weU2UpwEYKQ8X7CF7" target="_blank" class="location-link">Ver ubicación</a>
         </section>
 
         <!-- Frase romántica -->
@@ -161,27 +171,26 @@
             <p class="closing-quote">"Porque contigo, el paraíso está aquí en la tierra"</p>
         </section>
 
-        <!-- Invitación Especial (Tailwind, compacta) -->
-        <section class="special-invitation" role="region" aria-labelledby="invitation-title">
-            <div class="invitation-content max-w-xl mx-auto bg-white/80 backdrop-blur-sm rounded-xl shadow-sm p-6 text-center">
-                <div class="invitation-icon text-3xl mb-2" aria-hidden="true">💫</div>
-                <h2 id="invitation-title" class="text-2xl font-serif text-rose-700 mb-1">Una Invitación Especial</h2>
-                <div class="divider mx-auto w-20 h-0.5 bg-gradient-to-r from-transparent via-rose-200 to-transparent my-4" aria-hidden="true"></div>
-
-                <p class="invitation-text text-gray-700 text-sm sm:text-base leading-relaxed mb-3 px-2">
+        <!-- Invitación Especial -->
+        <section class="special-invitation">
+            <div class="invitation-content">
+                <div class="invitation-icon">💫</div>
+                <h2>Una Invitación Especial</h2>
+                <div class="divider"></div>
+                <p class="invitation-text">
                     Nos encantaría que nos acompañes en este día tan significativo. Tu presencia aportará calidez, alegría y recuerdos que guardaremos por siempre.
                 </p>
-
-                <p class="invitation-subtext text-amber-700 text-sm font-medium mb-4 px-4">
+                <p class="invitation-subtext">
                     Acompáñanos a celebrar el amor, la familia y la amistad — será un honor compartir este momento contigo.
                 </p>
-                <div class="invitation-signature mt-5 text-gray-800" aria-label="Firmado">
-                    <p class="text-sm">Con cariño,</p>
-                    <p class="signature-names font-semibold text-base">Carlos &amp; Tatiana</p>
+                <div class="invitation-signature">
+                    <p>Con cariño,</p>
+                    <p class="signature-names">Carlos & Tatiana</p>
                 </div>
             </div>
         </section>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
